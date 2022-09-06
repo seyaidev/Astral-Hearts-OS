@@ -579,7 +579,7 @@ function PlayerService:EquipSlot(Player, Slot, UniqueId)
 			end
 		end
 		
-		--update the fuckin thing
+		-- update the humanoid desc
 		local pHumDesc = HumDescCache[Player]
 		if not pHumDesc then print('wellw ell well, if it isnt bartholomew baxter') return end
 		
