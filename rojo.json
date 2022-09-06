@@ -1,0 +1,61 @@
+{
+  "name": "aerogameframework",
+  "servePort": 8000,
+  "partitions": {
+    "ClientControllers": {
+      "path": "src/Client/Controllers",
+      "target": "StarterPlayer.StarterPlayerScripts.Aero.Controllers"
+    },
+    "ClientModules": {
+      "path": "src/Client/Modules",
+      "target": "StarterPlayer.StarterPlayerScripts.Aero.Modules"
+    },
+    "ServerModules": {
+      "path": "src/Server/Modules",
+      "target": "ServerStorage.Aero.Modules"
+    },
+    "ServerServices": {
+      "path": "src/Server/Services",
+      "target": "ServerStorage.Aero.Services"
+    },
+    "Shared": {
+      "path": "src/Shared",
+      "target": "ReplicatedStorage.Aero.Shared",
+      "ignoreUnknownInstances": true,
+      "ignoreInstances": [
+        "PackageLink"
+      ]
+    },
+    "_ReplicatedFirst": {
+      "path": "src/_framework/rep_first",
+      "target": "ReplicatedFirst.Aero"
+    },
+    "_ReplicatedStorageInternal": {
+      "path": "src/_framework/rep_internal",
+      "target": "ReplicatedStorage.Aero.Internal"
+    },
+    "_ServerScriptService": {
+      "path": "src/_framework/server_internal",
+      "target": "ServerScriptService.Aero.Internal"
+    },
+    "_AeroClient": {
+      "path": "src/_framework/client_internal",
+      "target": "StarterPlayer.StarterPlayerScripts.Aero.Internal"
+    },
+
+    "_JumpTweaker": {
+      "path": "src/ReplicatedStorage/JumpTweakerAPI",
+      "target": "ReplicatedStorage.JumpTweakerAPI"
+    },
+
+    "_LegacyUtil": {
+      "path": "src/ReplicatedStorage/LegacyUtil",
+      "target": "ReplicatedStorage.LegacyUtil"
+    },
+
+    "_ExternalServer": {
+      "path": "src/ExternalServer",
+      "target": "ServerScriptService.External"
+    }
+  }
+}

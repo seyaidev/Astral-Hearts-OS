@@ -1,0 +1,90 @@
+{
+    "name": "AstralHearts",
+    "servePlaceIds": [
+        3018748854,
+        2230731085,
+        3246870877,
+        1269360362,
+        3246870877,
+        4453150092,
+        4434324454,
+        4732238938,
+        4749594385,
+        4831341648],
+    "tree": {
+        "$className": "DataModel",
+        "$ignoreUnknownInstances": true,
+        "ReplicatedFirst": {
+            "$className": "ReplicatedFirst",
+            "Aero": {
+                "$path": "src/_framework/rep_first"
+            }
+        },
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "Aero": {
+                "$className": "Folder",
+                "Shared": {
+                    "$path": "src/Shared",
+                    "$ignoreUnknownInstances": true
+                },
+                "Internal": {
+                    "$path": "src/_framework/rep_internal"
+                }
+            },
+            "JumpTweakerAPI": {
+                "$path": "src/ReplicatedStorage/JumpTweakerAPI"
+            },
+            "LegacyUtil": {
+                "$path": "src/ReplicatedStorage/LegacyUtil"
+            }    
+        },
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "Aero": {
+                "$className": "Folder",
+                "Internal": {
+                    "$path": "src/_framework/server_internal"
+                }
+            },
+            "External": {
+                "$path": "src/ExternalServer"
+            }
+        },
+        "ServerStorage": {
+            "$className": "ServerStorage",
+            "Aero": {
+                "$className": "Folder",
+                "Modules": {
+                    "$path": "src/Server/Modules"
+                },
+                "Services": {
+                    "$path": "src/Server/Services"
+                }
+            },
+
+            "Merchants": {
+                "$className": "Folder",
+                "$path": "src/Merchants"
+            }
+        },
+        "StarterPlayer": {
+            "$className": "StarterPlayer",
+            "StarterPlayerScripts": {
+                "$className": "StarterPlayerScripts",
+                "Aero": {
+                "$className": "Folder",
+                "Internal": {
+                        "$path": "src/_framework/client_internal"
+                    },
+                    "Modules": {
+                        "$path": "src/Client/Modules"
+                    },
+                    "Controllers": {
+                        "$path": "src/Client/Controllers"
+                    }
+                }
+            }
+        }
+    }
+}
